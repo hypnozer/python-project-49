@@ -8,7 +8,7 @@ def is_even(value):
     return value % 2 != 0
 
 
-def run_exercise():
+def get_exercise():
     exercise = random.randint(1, 999)
     if is_even(exercise):
         correct = 'yes'

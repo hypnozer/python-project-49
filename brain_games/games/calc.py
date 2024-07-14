@@ -14,7 +14,7 @@ def get_action(type, *args):
     return action[type](*args)
 
 
-def run_exercise():
+def get_exercise():
     type = random.choice(['+', '-', '*'])
     numbers = random.randint(1, 999), random.randint(1, 999)
     exercise = f"{numbers[0]} {type} {numbers[1]}"

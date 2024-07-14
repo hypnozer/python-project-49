@@ -1,5 +1,7 @@
 import random
 
+from brain_games.cli import welcome_user
+
 
 def is_even(value):
     if value % 2 != 0:

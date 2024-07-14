@@ -1,4 +1,5 @@
 import random
+from cli import name
 
 
 def is_even(value):
@@ -7,8 +8,11 @@ def is_even(value):
     else:
         return 'yes'
 
+
 def main():
-    first, second, third = random.randint(1, 999), random.randint(1, 999), random.randint(1, 999)
+    first, second, third = random.randint(1, 999),
+    random.randint(1, 999),
+    random.randint(1, 999)
     print('Answer "yes" if the number is even, otherwise answer "no".')
     print(f'Question: {first}')
     user_input = input('Your answer: ')
@@ -23,8 +27,11 @@ def main():
             if user_input == is_even(third):
                 print(f'Congratulations, {name}!')
             else:
-                print(f"'{user_input}' is wrong answer ;(. Correct answer was {is_even(third)}.\nLet.'s try again, {name}!")
+                print(f"'{user_input}' is wrong answer ;(. Correct\
+                       answer was {is_even(third)}.\nLet.'s try again, {name}!")
         else:
-            print(f"'{user_input}' is wrong answer ;(. Correct answer was {is_even(second)}.\nLet's try again, {name}!")
+            print(f"'{user_input}' is wrong answer ;(. Correct answer\
+                   was {is_even(second)}.\nLet's try again, {name}!")
     else:
-        print(f"'{user_input}' is wrong answer ;(. Correct answer was {is_even(first)}.\nLet's try again, {name}!")
+        print(f"'{user_input}' is wrong answer ;(. Correct answer\
+               was {is_even(first)}.\nLet's try again, {name}!")

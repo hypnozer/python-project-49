@@ -1,6 +1,4 @@
 import random
-from cli import name
-
 
 def is_even(value):
     if value % 2 != 0:

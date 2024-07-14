@@ -1,6 +1,5 @@
 import random
-
-from brain_games.cli import welcome_user
+import prompt
 
 
 def is_even(value):
@@ -11,6 +10,8 @@ def is_even(value):
 
 
 def main():
+    name = prompt.string("May I have your name? ")
+    print(f"Hello, {name}!")
     first, second, third = (
         random.randint(1, 999),
         random.randint(1, 999),
@@ -31,13 +32,20 @@ def main():
                 print(f"Congratulations, {name}!")
             else:
                 print(
-                    f"'{user_input}' is wrong answer ;(. Correct answer was {is_even(third)}.\nLet.'s try again, {name}!"
+                    f"'{user_input}' is wrong answer ;(. Correct answer was \
+                        {is_even(third)}.\nLet.'s try again, {name}!"
                 )
         else:
             print(
-                f"'{user_input}' is wrong answer ;(. Correct answer was {is_even(second)}.\nLet's try again, {name}!"
+                f"'{user_input}' is wrong answer ;(. Correct answer was \
+                    {is_even(second)}.\nLet's try again, {name}!"
             )
     else:
         print(
-            f"'{user_input}' is wrong answer ;(. Correct answer was {is_even(first)}.\nLet's try again, {name}!"
+            f"'{user_input}' is wrong answer ;(. Correct answer was \
+                {is_even(first)}.\nLet's try again, {name}!"
         )
+
+
+if __name__ == "__main__":
+    main()

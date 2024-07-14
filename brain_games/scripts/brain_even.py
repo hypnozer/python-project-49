@@ -29,16 +29,13 @@ def main():
                 print(f"Congratulations, {name}!")
             else:
                 print(
-                    f"'{user_input}' is wrong answer ;(. Correct answer was/
-                      {is_even(third)}.\nLet.'s try again, {name}!"
+                    f"'{user_input}' is wrong answer ;(. Correct answer was {is_even(third)}.\nLet.'s try again, {name}!"
                 )
         else:
             print(
-                f"'{user_input}' is wrong answer ;(. Correct answer was/
-                  {is_even(second)}.\nLet's try again, {name}!"
+                f"'{user_input}' is wrong answer ;(. Correct answer was {is_even(second)}.\nLet's try again, {name}!"
             )
     else:
         print(
-            f"'{user_input}' is wrong answer ;(. Correct answer was/
-              {is_even(first)}.\nLet's try again, {name}!"
+            f"'{user_input}' is wrong answer ;(. Correct answer was {is_even(first)}.\nLet's try again, {name}!"
         )

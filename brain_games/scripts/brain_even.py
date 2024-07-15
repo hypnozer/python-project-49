@@ -1,6 +1,6 @@
 #!usr/bin/env python3
 
-from brain_games.engine import game_logic
+from brain_games.core import game_logic
 from brain_games.games.even import get_exercise, task
 
 

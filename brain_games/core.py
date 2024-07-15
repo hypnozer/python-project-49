@@ -16,7 +16,7 @@ def scenario(get_exercise, task):
             print("Correct!")
             attempt_count += 1
         else:
-            f"'{user_input}' is wrong answer ;(. Correct answer was {correct}.\
-            \nLet.'s try again, {name}!"
+            print(f"'{user_input}' is wrong answer ;(. Correct answer was \
+                  {correct}. Let's try again, {name}!")
             break
     print(f"Congratulations, {name}!")

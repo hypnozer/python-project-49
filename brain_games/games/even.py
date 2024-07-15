@@ -5,7 +5,7 @@ task = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(value):
-    return value % 2 != 0
+    return value % 2 == 0
 
 
 def get_exercise():

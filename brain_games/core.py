@@ -8,15 +8,19 @@ def scenario(get_exercise, task):
 
     print(task)
 
-    while attempt_count <= 3:
+    while attempt_count < 3:
         exercise, correct = get_exercise()
         print(f"Question: {exercise}")
-        user_input = input("Your answer: ")
-        if user_input == correct:
+        print(f"{correct}")
+        _input = input("Your answer: ")
+        if _input == correct:
             print("Correct!")
             attempt_count += 1
         else:
-            print(f"'{user_input}' is wrong answer ;(. Correct answer was \
-                {correct}. Let's try again, {name}!")
+            print(
+                f"'{_input}' is wrong answer ;(. Correct answer was {correct}.\
+                   \nLet's try again, {name}!"
+            )
             break
-        print(f"Congratulations, {name}!")
+        if attempt_count == 3:
+            print(f"Congratulations, {name}!")

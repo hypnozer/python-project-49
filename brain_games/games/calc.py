@@ -12,7 +12,7 @@ def get_exercise():
         "*": operator.mul,
     }
     type = random.choice(['+', '-', '*'])
-    numbers = random.randint(1, 999), random.randint(1, 999)
+    numbers = random.randint(1, 100), random.randint(1, 100)
     exercise = f"{numbers[0]} {type} {numbers[1]}"
     correct = str(action[type](*numbers))
     return exercise, correct

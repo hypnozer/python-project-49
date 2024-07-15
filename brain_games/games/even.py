@@ -9,7 +9,7 @@ def is_even(value):
 
 
 def get_exercise():
-    exercise = random.randint(1, 999)
+    exercise = random.randint(1, 100)
     if is_even(exercise):
         correct = 'yes'
     else:

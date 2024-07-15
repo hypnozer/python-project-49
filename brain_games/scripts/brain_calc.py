@@ -1,11 +1,11 @@
 #!usr/bin/env python3
 
-from brain_games.core import game_logic
+from brain_games.core import scenario
 from brain_games.games.calc import get_exercise, task
 
 
 def main():
-    game_logic(get_exercise, task)
+    scenario(get_exercise, task)
 
 
 if __name__ == "__main__":

@@ -1,6 +1,5 @@
-
 from brain_games.core import scenario
-from brain_games.games.even import get_exercise, task
+from brain_games.games.gcd import get_exercise, task
 
 
 def main():

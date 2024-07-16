@@ -11,7 +11,7 @@ def congratulate_user(name):
     print(f"Congratulations, {name}!")
 
 
-def get_brain_game(get_exercise, task):
+def get_scenario(get_exercise, task):
     name = welcome_user()
     print(task)
 

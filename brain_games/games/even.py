@@ -1,15 +1,10 @@
-import random
-
+from brain_games.core import is_even, random_int
 
 task = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even(value):
-    return value % 2 == 0
-
-
 def get_exercise():
-    exercise = random.randint(1, 100)
+    exercise = random_int()
     if is_even(exercise):
         correct = 'yes'
     else:

@@ -1,4 +1,5 @@
 import prompt
+import random
 
 
 def welcome_user():
@@ -29,3 +30,18 @@ def get_scenario(get_exercise, task):
         print("Correct!")
 
     congratulate_user(name)
+
+
+def is_prime(num):
+    i = 2
+    while num % i != 0:
+        i += 1
+    return i == num
+
+
+def is_even(value):
+    return value % 2 == 0
+
+
+def random_int():
+    return random.randint(1, 100)

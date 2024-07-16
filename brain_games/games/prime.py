@@ -1,18 +1,11 @@
-import random
+from brain_games.core import is_prime, random_int
 
 
 task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(num):
-    i = 2
-    while num % i != 0:
-        i += 1
-    return i == num
-
-
 def get_exercise():
-    exercise = random.randint(1, 100)
+    exercise = random_int()
     if is_prime(exercise):
         correct = 'yes'
     else:

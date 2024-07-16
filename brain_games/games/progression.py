@@ -2,7 +2,7 @@ import random
 from brain_games.core import random_int
 
 
-task = "What number is missing in the progression?"
+TASK = "What number is missing in the progression?"
 
 
 def get_exercise():

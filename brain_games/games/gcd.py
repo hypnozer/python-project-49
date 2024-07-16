@@ -2,7 +2,7 @@ from brain_games.core import random_int
 import math
 
 
-task = "Find the greatest common divisor of given numbers."
+TASK = "Find the greatest common divisor of given numbers."
 
 
 def get_exercise():

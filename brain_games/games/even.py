@@ -1,6 +1,6 @@
 from brain_games.core import is_even, random_int
 
-task = 'Answer "yes" if the number is even, otherwise answer "no".'
+TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_exercise():

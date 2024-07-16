@@ -12,9 +12,9 @@ def congratulate_user(name):
     print(f"Congratulations, {name}!")
 
 
-def get_scenario(get_exercise, task):
+def get_scenario(get_exercise, TASK):
     name = welcome_user()
-    print(task)
+    print(TASK)
 
     for _ in range(3):
         exercise, correct = get_exercise()

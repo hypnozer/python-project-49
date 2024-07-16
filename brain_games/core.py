@@ -1,25 +1,31 @@
 import prompt
 
 
-def get_brain_game(get_exercise, task):
+def welcome_user():
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    attempt_count = 0
+    return name
 
+
+def congratulate_user(name):
+    print(f"Congratulations, {name}!")
+
+
+def get_brain_game(get_exercise, task):
+    name = welcome_user()
     print(task)
 
-    while attempt_count < 3:
+    for _ in range(3):
         exercise, correct = get_exercise()
         print(f"Question: {exercise}")
-        input_ = input("Your answer: ")
-        if input_ == correct:
-            print("Correct!")
-            attempt_count += 1
-        else:
+        try_ = input("Your answer: ")
+
+        if try_ != correct:
             print(
-                f"'{input_}' is wrong answer ;(. Correct answer was \
-                    '{correct}'. \nLet's try again, {name}!"
+                f"'{try_}' is wrong answer ;(. Correct answer was '{correct}'."
             )
-            break
-        if attempt_count == 3:
-            print(f"Congratulations, {name}!")
+            print(f"Let's try again, {name}!")
+            return
+        print("Correct!")
+
+    congratulate_user(name)

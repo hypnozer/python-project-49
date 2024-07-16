@@ -11,13 +11,13 @@ def scenario(get_exercise, task):
     while attempt_count < 3:
         exercise, correct = get_exercise()
         print(f"Question: {exercise}")
-        _input = input("Your answer: ")
-        if _input == correct:
+        input_ = input("Your answer: ")
+        if input_ == correct:
             print("Correct!")
             attempt_count += 1
         else:
             print(
-                f"'{_input}' is wrong answer ;(. Correct answer was '{correct}'.\
+                f"'{input_}' is wrong answer ;(. Correct answer was '{correct}'.\
                    \nLet's try again, {name}!"
             )
             break

@@ -1,7 +1,7 @@
 import prompt
 
 
-def scenario(get_exercise, task):
+def start_game(get_exercise, task):
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
     attempt_count = 0
@@ -17,8 +17,8 @@ def scenario(get_exercise, task):
             attempt_count += 1
         else:
             print(
-                f"'{input_}' is wrong answer ;(. Correct answer was '{correct}'.\
-                   \nLet's try again, {name}!"
+                f"'{input_}' is wrong answer ;(. Correct answer was \
+                    '{correct}'. \nLet's try again, {name}!"
             )
             break
         if attempt_count == 3:

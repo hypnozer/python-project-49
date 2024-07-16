@@ -2,17 +2,7 @@
 [![Actions Status](https://github.com/Vladimirshkarin/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Vladimirshkarin/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2bb5b23839f92b27c2e1/maintainability)](https://codeclimate.com/github/Vladimirshkarin/python-project-49/maintainability)
 
-<h1 style="color:red">B</h1>
-<h1 style="color:orange">r</h1>
-<h1 style="color:yellow">a</h1>
-<h1 style="color:green">i</h1>
-<h1 style="color:blue">n</h1>
-<h1 style="color:indigo"> </h1>
-<h1 style="color:violet">G</h1>
-<h1 style="color:red">a</h1>
-<h1 style="color:orange">m</h1>
-<h1 style="color:yellow">e</h1>
-<h1 style="color:green">s</h1>
+<h1 style="color:red">Brain games</h1>
 
 **“Brain Games”** is a collection of console-based brain games built in Python. Each game offers a unique mental challenge, ranging from calculations and number theory to recognizing even numbers. The project includes games like:
 - **brain-even** (guess whether a number is even);

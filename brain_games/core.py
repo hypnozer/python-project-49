@@ -1,7 +1,7 @@
 import prompt
 
 
-def start_game(get_exercise, task):
+def get_brain_game(get_exercise, task):
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
     attempt_count = 0

@@ -4,7 +4,7 @@ packages = [
   { include = "brain_games" },
 ]
 version = "0.1.0"
-description = "Brain Games is a collection of console-based brain games built in Python."
+description = '"Brain Games" is a collection of console-based brain games built in Python. Each game offers a unique mental challenge, ranging from calculations and number theory to recognizing even numbers. The project includes games like “brain-even,” “brain-calc,” “brain-gcd,” “brain-progression,” and “brain-prime.” Test your mental agility and have fun with this diverse set of games!'
 authors = ["Vladimir Shkarin <vladimir.shkarin@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/Vladimirshkarin/python-project-49"

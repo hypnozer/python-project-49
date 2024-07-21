@@ -12,7 +12,7 @@ def congratulate_user(name):
     print(f"Congratulations, {name}!")
 
 
-def get_scenario(get_exercise, TASK):
+def run(get_exercise, TASK):
     name = welcome_user()
     print(TASK)
 
@@ -30,17 +30,6 @@ def get_scenario(get_exercise, TASK):
         print("Correct!")
 
     congratulate_user(name)
-
-
-def is_prime(num):
-    i = 2
-    while num % i != 0:
-        i += 1
-    return i == num
-
-
-def is_even(value):
-    return value % 2 == 0
 
 
 def random_int():
